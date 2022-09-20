@@ -1,0 +1,33 @@
+server:
+  port: 2020
+
+spring:
+  datasource: 
+    driver-class-name:  oracle.jdbc.OracleDriver
+    url:  jdbc:oracle:thin:@localhost:1521/XE
+    username: nxt
+    password: nxt
+       
+  jpa:  
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true 
+        ddl-auto: create
+        dialect: org.hibernate.dialect.Oracle10gDialect
+  mail:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+          secure: false
+          autoTLS: false
+          connectiontimeout: 5000
+          timeout:  5000
+    host: smtp.gmail.com
+    username: info@nxt.ng
+    password: #Nxt2022
+    port: 465
+    protocol: smtp
