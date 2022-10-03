@@ -14,12 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.nitax.nxt.dto.UserMsgDto;
 import com.nitax.nxt.response.MessageResponse;
 import com.nitax.nxt.service.UserService;
+import com.nitax.nxt.utils.EmailUtils;
 
 
 @RestController
 public class UserMgsEtyController {
+	
 	@Autowired
-	private UserService service;
+	private EmailUtils emailUtils;
 	
 	@GetMapping({"/","/datainput"})
 	public ResponseEntity<String> loadPage(){
@@ -33,7 +35,8 @@ public class UserMgsEtyController {
 	public MessageResponse  handleSubmitBtn(@RequestBody UserMsgDto u){
 		MessageResponse response =null;
 		try {
-			boolean isSaved=service.saveMsg(u);
+			//boolean isSaved=service.saveMsg(u);
+			emailUtils.sendMail(u);
 			String body= "Message Sent Successfully: ";
 			response =MessageResponse
 					.builder()

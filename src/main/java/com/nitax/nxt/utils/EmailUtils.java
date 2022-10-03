@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 
 import java.io.FileReader;
 import java.io.IOException;
-import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;

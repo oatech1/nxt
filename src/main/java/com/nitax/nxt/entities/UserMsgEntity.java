@@ -15,7 +15,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "USER_IPT")
+@Table(name = "USER_DTLS")
 public class UserMsgEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -27,7 +27,6 @@ public class UserMsgEntity implements Serializable {
 	@GeneratedValue(generator ="useridseq",
 			strategy = GenerationType.SEQUENCE
 			)
-
 
 	@Column(name = "USER_ID")
 	private Integer id;

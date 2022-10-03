@@ -26,8 +26,8 @@ spring:
           autoTLS: false
           connectiontimeout: 5000
           timeout:  5000
-    host: smtp.gmail.com
-    username: info@nxt.ng
+    host: smtp-mail.outlook.com
+    username: admin@nxt.ng
     password: #Nxt2022
-    port: 465
+    port: 587
     protocol: smtp

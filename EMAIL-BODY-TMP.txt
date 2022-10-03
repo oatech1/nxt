@@ -1,14 +1,13 @@
 
-<html>
-<br>Dear Applicant, 
-<br/>
 
-<br>Thank you for applying to NXT.
+Dear Applicant, 
+
+Thank you for applying to NXT.
 Your Application has been successfully received. Due to the large number of applications we receive, only shortlisted candidates will be contacted.
 This is an automated email, please do not reply.
 Kind regards,
-<br/>
+
 
 HR Team
 
-<html/>
+

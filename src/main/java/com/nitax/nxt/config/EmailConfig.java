@@ -13,10 +13,10 @@ public class EmailConfig {
 	public JavaMailSender getJavaMailSender() {
 		
 		JavaMailSenderImpl mail=new JavaMailSenderImpl();
-		mail.setHost("smtp.gmail.com");
+		mail.setHost("smtp-mail.outlook.com");
 		mail.setPort(465);
-		mail.setUsername("oayodele111@gmail.com");
-		mail.setPassword("zcfrfbfpfypyjxas");
+		mail.setUsername("admin@nxt.ng");
+		mail.setPassword("#Nxt2022");
 		
 		Properties props=mail.getJavaMailProperties();
 		props.put("mail.transport.protocol", "smtp");
